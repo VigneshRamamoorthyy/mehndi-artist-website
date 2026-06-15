@@ -16,12 +16,10 @@ const Footer = () => {
               Elevating the art of henna with premium, organic materials and bespoke designs for your most special moments.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors">
+              <a href="https://instagram.com/rekha_henna_artist" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://facebook.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors">
-                <Facebook size={20} />
-              </a>
+
               <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors">
                 <MessageCircle size={20} />
               </a>
