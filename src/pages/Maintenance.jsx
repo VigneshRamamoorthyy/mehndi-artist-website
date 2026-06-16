@@ -21,6 +21,7 @@ const Maintenance = () => {
         position: 'relative',
         overflow: 'hidden',
         fontFamily: "'Poppins', sans-serif",
+        overscrollBehaviorY: "none",
       }}
     >
       {/* Mehndi SVG Pattern Background */}
