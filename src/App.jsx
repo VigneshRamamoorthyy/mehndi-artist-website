@@ -7,7 +7,7 @@ import Maintenance from './pages/Maintenance';
 // Set to `true`  → visitors see the maintenance page only.
 // Set to `false` → the normal website loads as usual.
 // ─────────────────────────────────────────────────────────────
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 function App() {
   if (maintenanceMode) {

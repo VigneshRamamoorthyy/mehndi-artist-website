@@ -146,57 +146,59 @@ const Testimonials = () => {
         </div>
 
         {/* ── Supporting Cards ─────────────────────────────────────── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
-          {rest.map((t) => (
-            <div
-              key={t.id}
-              className="group relative bg-white rounded-[20px] shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gold/10 overflow-hidden flex flex-col"
-            >
-              {/* Photo banner */}
-              <div className="relative h-56 sm:h-60 shrink-0 overflow-hidden">
-                <img
-                  src={t.photo}
-                  alt={t.name}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-                <span className="absolute bottom-3 left-4 font-body text-[11px] font-semibold uppercase tracking-widest text-white bg-maroon/80 backdrop-blur-sm px-3 py-1 rounded-full border border-gold/30">
-                  {t.event}
-                </span>
-                <div className="absolute bottom-3 right-4">
-                  <Stars count={t.rating} size={13} />
-                </div>
-              </div>
 
-              {/* Card body */}
-              <div className="flex flex-col flex-1 px-6 pt-5 pb-6">
-                <Quote size={24} className="text-gold/30 fill-current mb-3 shrink-0" />
-                <p className="font-body text-gray-600 italic leading-relaxed text-sm flex-1 mb-5">
-                  "{t.review}"
-                </p>
-                <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
+        {false && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+            {rest.map((t) => (
+              <div
+                key={t.id}
+                className="group relative bg-white rounded-[20px] shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gold/10 overflow-hidden flex flex-col"
+              >
+                {/* Photo banner */}
+                <div className="relative h-56 sm:h-60 shrink-0 overflow-hidden">
                   <img
                     src={t.photo}
                     alt={t.name}
-                    className="w-10 h-10 rounded-full object-cover object-center border-2 border-gold/50 shadow-sm shrink-0"
+                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div>
-                    <h4 className="font-heading font-bold text-maroon text-sm leading-tight">{t.name}</h4>
-                    <span className="font-body text-[11px] text-gold font-semibold uppercase tracking-wider">
-                      Verified Client
-                    </span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                  <span className="absolute bottom-3 left-4 font-body text-[11px] font-semibold uppercase tracking-widest text-white bg-maroon/80 backdrop-blur-sm px-3 py-1 rounded-full border border-gold/30">
+                    {t.event}
+                  </span>
+                  <div className="absolute bottom-3 right-4">
+                    <Stars count={t.rating} size={13} />
                   </div>
-                  <div className="ml-auto bg-green-50 text-green-600 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-green-200 flex items-center gap-1">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                      <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    5★ Review
+                </div>
+
+                {/* Card body */}
+                <div className="flex flex-col flex-1 px-6 pt-5 pb-6">
+                  <Quote size={24} className="text-gold/30 fill-current mb-3 shrink-0" />
+                  <p className="font-body text-gray-600 italic leading-relaxed text-sm flex-1 mb-5">
+                    "{t.review}"
+                  </p>
+                  <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
+                    <img
+                      src={t.photo}
+                      alt={t.name}
+                      className="w-10 h-10 rounded-full object-cover object-center border-2 border-gold/50 shadow-sm shrink-0"
+                    />
+                    <div>
+                      <h4 className="font-heading font-bold text-maroon text-sm leading-tight">{t.name}</h4>
+                      <span className="font-body text-[11px] text-gold font-semibold uppercase tracking-wider">
+                        Verified Client
+                      </span>
+                    </div>
+                    <div className="ml-auto bg-green-50 text-green-600 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-green-200 flex items-center gap-1">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <path d="M2 5l2.5 2.5L8 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      5★ Review
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>)}
 
         {/* ── WhatsApp CTA ─────────────────────────────────────────── */}
         <div className="relative bg-maroon rounded-3xl overflow-hidden px-8 py-14 text-center shadow-2xl">
