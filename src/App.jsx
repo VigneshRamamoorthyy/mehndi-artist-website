@@ -1,4 +1,4 @@
-import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/Home';
 import Maintenance from './pages/Maintenance';
 
@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       <Home />
+      <Analytics />
     </div>
   );
 }
